@@ -1,0 +1,42 @@
+[
+  {
+    "id": "eye",
+    "label": "Eye",
+    "assetId": "demoSymbols",
+    "idleAnimation": "eye_idle",
+    "stopAnimation": "eye_win",
+    "weight": 1
+  },
+  {
+    "id": "staff",
+    "label": "Staff",
+    "assetId": "demoSymbols",
+    "idleAnimation": "staff_idle",
+    "stopAnimation": "staff_win",
+    "weight": 2
+  },
+  {
+    "id": "blade",
+    "label": "Blade",
+    "assetId": "demoSymbols",
+    "idleAnimation": "blade_idle",
+    "stopAnimation": "blade_win",
+    "weight": 3
+  },
+  {
+    "id": "gem_red",
+    "label": "Red Gem",
+    "assetId": "demoSymbols",
+    "idleAnimation": "gem_red_idle",
+    "stopAnimation": "gem_red_win",
+    "weight": 4
+  },
+  {
+    "id": "gem_green",
+    "label": "Green Gem",
+    "assetId": "demoSymbols",
+    "idleAnimation": "gem_green_idle",
+    "stopAnimation": "gem_green_win",
+    "weight": 5
+  }
+]

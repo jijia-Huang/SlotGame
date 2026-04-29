@@ -1,0 +1,17 @@
+{
+  "sequences": [
+    {
+      "id": "demoSymbols",
+      "type": "sequence",
+      "src": "/assets/sequences/demo-symbols.json"
+    }
+  ],
+  "spines": [
+    {
+      "id": "mascot",
+      "type": "spine",
+      "skeleton": "/assets/spine/mascot.json",
+      "atlas": "/assets/spine/mascot.atlas"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightweight Slot Framework</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game-root"></div>
+      <div id="hud" aria-label="slot controls">
+        <div class="meter">
+          <span>Balance</span>
+          <strong id="balance">$1,000</strong>
+        </div>
+        <div class="meter">
+          <span>Bet</span>
+          <strong id="bet">$20</strong>
+        </div>
+        <button id="spin-button" type="button" aria-label="Spin">
+          <span aria-hidden="true">▶</span>
+          <span>Spin</span>
+        </button>
+        <div class="meter">
+          <span>Win</span>
+          <strong id="win">$0</strong>
+        </div>
+        <div class="status" id="status">Ready</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

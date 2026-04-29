@@ -1,0 +1,88 @@
+{
+  "id": "demoSymbols",
+  "frameWidth": 118,
+  "frameHeight": 96,
+  "animations": {
+    "eye_idle": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        { "label": "EYE", "fill": "#854d0e", "accent": "#fef08a" },
+        { "label": "EYE", "fill": "#a16207", "accent": "#fde047" }
+      ]
+    },
+    "eye_win": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        { "label": "EYE", "fill": "#92400e", "accent": "#ffffff" },
+        { "label": "EYE", "fill": "#f59e0b", "accent": "#fef3c7" },
+        { "label": "EYE", "fill": "#92400e", "accent": "#ffffff" }
+      ]
+    },
+    "staff_idle": {
+      "fps": 7,
+      "loop": true,
+      "frames": [
+        { "label": "STF", "fill": "#7c2d12", "accent": "#fed7aa" },
+        { "label": "STF", "fill": "#9a3412", "accent": "#fdba74" }
+      ]
+    },
+    "staff_win": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        { "label": "STF", "fill": "#c2410c", "accent": "#ffffff" },
+        { "label": "STF", "fill": "#7c2d12", "accent": "#ffedd5" }
+      ]
+    },
+    "blade_idle": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        { "label": "BLD", "fill": "#334155", "accent": "#cbd5e1" },
+        { "label": "BLD", "fill": "#475569", "accent": "#e2e8f0" }
+      ]
+    },
+    "blade_win": {
+      "fps": 11,
+      "loop": true,
+      "frames": [
+        { "label": "BLD", "fill": "#1e293b", "accent": "#ffffff" },
+        { "label": "BLD", "fill": "#64748b", "accent": "#f8fafc" }
+      ]
+    },
+    "gem_red_idle": {
+      "fps": 7,
+      "loop": true,
+      "frames": [
+        { "label": "RED", "fill": "#991b1b", "accent": "#fecaca" },
+        { "label": "RED", "fill": "#dc2626", "accent": "#fca5a5" }
+      ]
+    },
+    "gem_red_win": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        { "label": "RED", "fill": "#7f1d1d", "accent": "#ffffff" },
+        { "label": "RED", "fill": "#ef4444", "accent": "#fee2e2" }
+      ]
+    },
+    "gem_green_idle": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        { "label": "GRN", "fill": "#047857", "accent": "#a7f3d0" },
+        { "label": "GRN", "fill": "#059669", "accent": "#6ee7b7" }
+      ]
+    },
+    "gem_green_win": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        { "label": "GRN", "fill": "#065f46", "accent": "#ffffff" },
+        { "label": "GRN", "fill": "#10b981", "accent": "#d1fae5" }
+      ]
+    }
+  }
+}
