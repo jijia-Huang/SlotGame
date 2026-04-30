@@ -1,42 +1,56 @@
 [
   {
-    "id": "eye",
-    "label": "Eye",
+    "id": "fire_emblem",
+    "label": "火焰徽章",
+    "kind": "pay",
     "assetId": "demoSymbols",
-    "idleAnimation": "eye_idle",
-    "stopAnimation": "eye_win",
+    "idleAnimation": "fire_emblem_idle",
+    "stopAnimation": "fire_emblem_win",
     "weight": 1
   },
   {
-    "id": "staff",
-    "label": "Staff",
+    "id": "water_shell",
+    "label": "水龜甲",
+    "kind": "pay",
     "assetId": "demoSymbols",
-    "idleAnimation": "staff_idle",
-    "stopAnimation": "staff_win",
+    "idleAnimation": "water_shell_idle",
+    "stopAnimation": "water_shell_win",
     "weight": 2
   },
   {
-    "id": "blade",
-    "label": "Blade",
+    "id": "grass_leaf",
+    "label": "草葉徽章",
+    "kind": "pay",
     "assetId": "demoSymbols",
-    "idleAnimation": "blade_idle",
-    "stopAnimation": "blade_win",
+    "idleAnimation": "grass_leaf_idle",
+    "stopAnimation": "grass_leaf_win",
     "weight": 3
   },
   {
-    "id": "gem_red",
-    "label": "Red Gem",
+    "id": "berry",
+    "label": "樹果",
+    "kind": "pay",
     "assetId": "demoSymbols",
-    "idleAnimation": "gem_red_idle",
-    "stopAnimation": "gem_red_win",
+    "idleAnimation": "berry_idle",
+    "stopAnimation": "berry_win",
     "weight": 4
   },
   {
-    "id": "gem_green",
-    "label": "Green Gem",
+    "id": "potion",
+    "label": "傷藥",
+    "kind": "pay",
     "assetId": "demoSymbols",
-    "idleAnimation": "gem_green_idle",
-    "stopAnimation": "gem_green_win",
+    "idleAnimation": "potion_idle",
+    "stopAnimation": "potion_win",
     "weight": 5
+  },
+  {
+    "id": "pokeball",
+    "label": "寶貝球",
+    "kind": "special",
+    "assetId": "demoSymbols",
+    "idleAnimation": "pokeball_idle",
+    "stopAnimation": "pokeball_win",
+    "weight": 2
   }
 ]

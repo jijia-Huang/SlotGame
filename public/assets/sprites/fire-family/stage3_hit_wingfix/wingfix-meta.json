@@ -1,0 +1,11 @@
+{
+  "source": "programmatic wing composite",
+  "baseFrames": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\fire-family\\stage3_hit_wingfix",
+  "wingReferenceFrames": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\fire-family\\stage3_hit",
+  "frames": [
+    "stage3_hit_wingfix-1.png",
+    "stage3_hit_wingfix-2.png",
+    "stage3_hit_wingfix-3.png",
+    "stage3_hit_wingfix-4.png"
+  ]
+}

@@ -1,0 +1,1 @@
+stage3 large blue cannon-back water turtle idle, 2x2, facing left, solid magenta raw

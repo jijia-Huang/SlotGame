@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "stage2_idle",
+  "prompt": "v2 fixed design stage2: 90s handheld medium green four-legged flower-bud beast, same rounded head/body lineage, cream jaw/toes, three flank spots plus cheek spot, leafy collar, centered closed pink-green teardrop bud with sepals; idle 2x2.",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\grass-family-v2\\stage2_idle\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.86,
+  "trim_border": 8,
+  "edge_clean_depth": 6,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 16,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage2_idle-1",
+    "stage2_idle-2",
+    "stage2_idle-3",
+    "stage2_idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        91,
+        123,
+        531,
+        505
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        95
+      ],
+      "paste_position": [
+        9,
+        25
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        81,
+        123,
+        522,
+        505
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        95
+      ],
+      "paste_position": [
+        9,
+        25
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        91,
+        111,
+        529,
+        485
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        93
+      ],
+      "paste_position": [
+        9,
+        27
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        82,
+        111,
+        521,
+        492
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        95
+      ],
+      "paste_position": [
+        9,
+        25
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

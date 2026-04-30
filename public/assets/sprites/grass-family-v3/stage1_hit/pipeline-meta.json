@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "hurt",
+  "prompt": "grass-family-v3 stage1 HIT: same accepted idle character, front-facing 3/4, seed bud and leaves retained, no ball/orb/projectile/UI/text",
+  "role": "",
+  "input": "public\\assets\\sprites\\grass-family-v3\\stage1_hit\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.92,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 4,
+  "min_component_area": 1,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "stage1_hit-1",
+    "stage1_hit-2",
+    "stage1_hit-3",
+    "stage1_hit-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 12,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        94,
+        163,
+        557,
+        517
+      ],
+      "edge_touch": false,
+      "output_size": [
+        116,
+        88
+      ],
+      "paste_position": [
+        6,
+        35
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 20,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        97,
+        120,
+        567,
+        522
+      ],
+      "edge_touch": false,
+      "output_size": [
+        117,
+        100
+      ],
+      "paste_position": [
+        5,
+        23
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 5,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        92,
+        80,
+        545,
+        480
+      ],
+      "edge_touch": false,
+      "output_size": [
+        113,
+        100
+      ],
+      "paste_position": [
+        7,
+        23
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 5,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        106,
+        90,
+        545,
+        483
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        98
+      ],
+      "paste_position": [
+        9,
+        25
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

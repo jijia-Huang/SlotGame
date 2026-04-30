@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "stage2_hit",
+  "prompt": "Fan-game placeholder grass creature stage 2, medium green flower-bud beast, 2x2 hit reaction sheet with stars/leaves only, no ball/orb/projectile/weapon, solid #FF00FF raw background.",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\grass-family\\stage2_hit\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.86,
+  "trim_border": 8,
+  "edge_clean_depth": 6,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 16,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage2_hit-1",
+    "stage2_hit-2",
+    "stage2_hit-3",
+    "stage2_hit-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        73,
+        125,
+        524,
+        537
+      ],
+      "edge_touch": false,
+      "output_size": [
+        93,
+        85
+      ],
+      "paste_position": [
+        17,
+        35
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 9,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        41,
+        121,
+        571,
+        537
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        86
+      ],
+      "paste_position": [
+        9,
+        34
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 7,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        42,
+        102,
+        562,
+        523
+      ],
+      "edge_touch": false,
+      "output_size": [
+        108,
+        87
+      ],
+      "paste_position": [
+        10,
+        33
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 8,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        32,
+        129,
+        539,
+        527
+      ],
+      "edge_touch": false,
+      "output_size": [
+        105,
+        82
+      ],
+      "paste_position": [
+        11,
+        38
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

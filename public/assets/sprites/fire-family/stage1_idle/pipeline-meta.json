@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "idle",
+  "prompt": "four-frame idle loop for a small orange fire-tailed lizard creature, 3/4 side battle view, magenta keyed pixel-art raw sheet",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\fire-family\\stage1_idle\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.92,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 10,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage1_idle-1",
+    "stage1_idle-2",
+    "stage1_idle-3",
+    "stage1_idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        159,
+        134,
+        532,
+        535
+      ],
+      "edge_touch": false,
+      "output_size": [
+        108,
+        116
+      ],
+      "paste_position": [
+        10,
+        7
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 2,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        107,
+        132,
+        483,
+        538
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        117
+      ],
+      "paste_position": [
+        9,
+        6
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 8,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        156,
+        78,
+        554,
+        482
+      ],
+      "edge_touch": false,
+      "output_size": [
+        115,
+        117
+      ],
+      "paste_position": [
+        6,
+        6
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        113,
+        86,
+        488,
+        487
+      ],
+      "edge_touch": false,
+      "output_size": [
+        108,
+        116
+      ],
+      "paste_position": [
+        10,
+        7
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

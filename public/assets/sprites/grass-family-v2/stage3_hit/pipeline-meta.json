@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "stage3_hit",
+  "prompt": "v2 fixed design stage3 hit: same stage3 flower beast, same spots/collar and six-petal open flower; hurt reaction with stars/leaves only, no ball/orb/projectile/weapon.",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\grass-family-v2\\stage3_hit\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.86,
+  "trim_border": 8,
+  "edge_clean_depth": 6,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 16,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage3_hit-1",
+    "stage3_hit-2",
+    "stage3_hit-3",
+    "stage3_hit-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        63,
+        110,
+        567,
+        514
+      ],
+      "edge_touch": false,
+      "output_size": [
+        103,
+        82
+      ],
+      "paste_position": [
+        12,
+        38
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 10,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        36,
+        122,
+        572,
+        522
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        82
+      ],
+      "paste_position": [
+        9,
+        38
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 9,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        61,
+        119,
+        570,
+        490
+      ],
+      "edge_touch": false,
+      "output_size": [
+        104,
+        76
+      ],
+      "paste_position": [
+        12,
+        44
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 11,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        30,
+        128,
+        555,
+        508
+      ],
+      "edge_touch": false,
+      "output_size": [
+        107,
+        78
+      ],
+      "paste_position": [
+        10,
+        42
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

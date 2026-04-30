@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "hurt",
+  "prompt": "grass-family-v3 stage3 HIT: same accepted idle character, front-facing 3/4, large pink flower visible in all frames, no ball/orb/projectile/UI/text",
+  "role": "",
+  "input": "public\\assets\\sprites\\grass-family-v3\\stage3_hit\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 140,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.92,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 4,
+  "min_component_area": 1,
+  "edge_touch_margin": 3,
+  "frame_labels": [
+    "stage3_hit-1",
+    "stage3_hit-2",
+    "stage3_hit-3",
+    "stage3_hit-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        61,
+        54,
+        565,
+        545
+      ],
+      "edge_touch": false,
+      "output_size": [
+        115,
+        112
+      ],
+      "paste_position": [
+        6,
+        11
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 8,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        26,
+        67,
+        542,
+        542
+      ],
+      "edge_touch": false,
+      "output_size": [
+        117,
+        108
+      ],
+      "paste_position": [
+        5,
+        15
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 8,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        71,
+        56,
+        563,
+        530
+      ],
+      "edge_touch": false,
+      "output_size": [
+        112,
+        108
+      ],
+      "paste_position": [
+        8,
+        15
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 5,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        40,
+        57,
+        521,
+        540
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        110
+      ],
+      "paste_position": [
+        9,
+        13
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

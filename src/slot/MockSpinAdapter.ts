@@ -22,10 +22,16 @@ export class MockSpinAdapter {
 
     this.cursor += 1;
     const lines = this.evaluate(grid);
+    const totalWin = lines.reduce((sum, line) => sum + line.amount, 0);
     return {
       grid,
       lines,
-      win: lines.reduce((sum, line) => sum + line.amount, 0),
+      win: totalWin,
+      baseWin: totalWin,
+      featureWin: 0,
+      totalWin,
+      pokeballs: [],
+      featureEvents: [],
     };
   }
 

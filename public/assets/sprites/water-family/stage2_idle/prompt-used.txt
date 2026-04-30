@@ -1,0 +1,1 @@
+stage2 medium blue water turtle idle, 2x2, facing left, solid magenta raw

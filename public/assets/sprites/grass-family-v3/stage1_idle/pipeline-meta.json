@@ -1,0 +1,175 @@
+{
+  "target": "creature",
+  "mode": "idle",
+  "prompt": "grass-family-v3 stage1 idle: frontal three-quarter small green quadruped seed beast, both eyes visible, chest/front belly visible, four legs with front/back depth, only breathing/blink/seed sway, no side view, no hit effects, no text/UI/balls/stars.",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\grass-family-v3\\stage1_idle\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.92,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "center",
+  "shared_scale": true,
+  "component_mode": "largest",
+  "component_padding": 18,
+  "min_component_area": 1,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage1_idle-1",
+    "stage1_idle-2",
+    "stage1_idle-3",
+    "stage1_idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 89523,
+      "selected_component_bbox": [
+        139,
+        183,
+        519,
+        539
+      ],
+      "crop_bbox": [
+        121,
+        165,
+        537,
+        557
+      ],
+      "edge_touch": false,
+      "output_size": [
+        111,
+        104
+      ],
+      "paste_position": [
+        8,
+        12
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 91995,
+      "selected_component_bbox": [
+        108,
+        134,
+        469,
+        539
+      ],
+      "crop_bbox": [
+        90,
+        116,
+        487,
+        557
+      ],
+      "edge_touch": false,
+      "output_size": [
+        106,
+        117
+      ],
+      "paste_position": [
+        11,
+        5
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 84556,
+      "selected_component_bbox": [
+        139,
+        156,
+        519,
+        480
+      ],
+      "crop_bbox": [
+        121,
+        138,
+        537,
+        498
+      ],
+      "edge_touch": false,
+      "output_size": [
+        111,
+        96
+      ],
+      "paste_position": [
+        8,
+        16
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "largest",
+      "component_count": 1,
+      "selected_component_area": 86576,
+      "selected_component_bbox": [
+        108,
+        150,
+        490,
+        486
+      ],
+      "crop_bbox": [
+        90,
+        132,
+        508,
+        504
+      ],
+      "edge_touch": false,
+      "output_size": [
+        111,
+        99
+      ],
+      "paste_position": [
+        8,
+        14
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

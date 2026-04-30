@@ -1,0 +1,18 @@
+{
+  "source": "programmatic water-family composite from existing idle transparent frames",
+  "fromStage": 1,
+  "toStage": 2,
+  "rows": 2,
+  "cols": 3,
+  "frameWidth": 160,
+  "frameHeight": 160,
+  "durationMs": 120,
+  "frames": [
+    "stage1_evolve_to_stage2-1.png",
+    "stage1_evolve_to_stage2-2.png",
+    "stage1_evolve_to_stage2-3.png",
+    "stage1_evolve_to_stage2-4.png",
+    "stage1_evolve_to_stage2-5.png",
+    "stage1_evolve_to_stage2-6.png"
+  ]
+}

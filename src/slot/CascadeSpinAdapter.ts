@@ -1,4 +1,7 @@
-import type { CascadeStep, CascadeWin, PaytableConfig, SpinResult, SymbolConfig } from './types';
+import type { CascadeStep, CascadeWin, FeatureEvent, PaytableConfig, PokeballHit, PotFamilyId, SpinResult, SymbolConfig } from './types';
+
+const POT_FAMILIES: PotFamilyId[] = ['fire', 'water', 'grass'];
+const JP_MULTIPLIERS = [25, 50, 100];
 
 export class CascadeSpinAdapter {
   private cursor = 0;
@@ -8,10 +11,10 @@ export class CascadeSpinAdapter {
     private readonly paytable: PaytableConfig,
   ) {}
 
-  next(): SpinResult {
+  next(potStages: Record<PotFamilyId, number> = { fire: 0, water: 0, grass: 0 }): SpinResult {
     let grid = this.createOpeningGrid();
     const cascades: CascadeStep[] = [];
-    let totalWin = 0;
+    let baseWin = 0;
 
     for (let guard = 0; guard < 5; guard += 1) {
       const wins = this.evaluate(grid);
@@ -20,12 +23,16 @@ export class CascadeSpinAdapter {
       }
 
       const win = wins.reduce((sum, item) => sum + item.amount, 0);
-      totalWin += win;
+      baseWin += win;
       cascades.push({ grid: cloneGrid(grid), wins, win });
       grid = this.collapseAndRefill(grid, wins);
     }
 
     cascades.push({ grid: cloneGrid(grid), wins: [], win: 0 });
+    const pokeballs = this.collectPokeballs(grid);
+    const featureEvents = this.createFeatureEvents(pokeballs, potStages);
+    const featureWin = featureEvents.reduce((sum, event) => sum + event.jpWin, 0);
+    const totalWin = baseWin + featureWin;
     this.cursor += 1;
 
     return {
@@ -33,6 +40,11 @@ export class CascadeSpinAdapter {
       lines: [],
       cascades,
       win: totalWin,
+      baseWin,
+      featureWin,
+      totalWin,
+      pokeballs,
+      featureEvents,
     };
   }
 
@@ -42,7 +54,7 @@ export class CascadeSpinAdapter {
       Array.from({ length: this.paytable.rows }, (_, row) => symbolIds[(this.cursor + col * 2 + row) % symbolIds.length]),
     );
 
-    const forcedSymbol = this.cursor % 2 === 0 ? 'eye' : 'gem_green';
+    const forcedSymbol = this.cursor % 2 === 0 ? 'fire_emblem' : 'potion';
     const forcedPositions = this.cursor % 2 === 0
       ? [
           [0, 0], [1, 0], [2, 0], [4, 0],
@@ -58,14 +70,29 @@ export class CascadeSpinAdapter {
       grid[col][row] = forcedSymbol;
     });
 
+    const ballPositions = [
+      [this.cursor % this.paytable.cols, (this.cursor + 2) % this.paytable.rows],
+      [(this.cursor + 3) % this.paytable.cols, (this.cursor + 4) % this.paytable.rows],
+    ];
+
+    ballPositions.forEach(([col, row], index) => {
+      if ((this.cursor + index) % 3 !== 1) {
+        grid[col][row] = 'pokeball';
+      }
+    });
+
     return grid;
   }
 
   private evaluate(grid: string[][]): CascadeWin[] {
     const positionsBySymbol = new Map<string, Array<{ col: number; row: number }>>();
+    const paySymbolIds = new Set(this.symbols.filter((symbol) => symbol.kind === 'pay').map((symbol) => symbol.id));
 
     grid.forEach((column, col) => {
       column.forEach((symbolId, row) => {
+        if (!paySymbolIds.has(symbolId)) {
+          return;
+        }
         const positions = positionsBySymbol.get(symbolId) ?? [];
         positions.push({ col, row });
         positionsBySymbol.set(symbolId, positions);
@@ -101,6 +128,64 @@ export class CascadeSpinAdapter {
       return [...refill, ...survivors];
     });
   }
+
+  private collectPokeballs(grid: string[][]): PokeballHit[] {
+    const hits: PokeballHit[] = [];
+
+    grid.forEach((column, col) => {
+      column.forEach((symbolId, row) => {
+        if (symbolId !== 'pokeball') {
+          return;
+        }
+
+        const familyId = POT_FAMILIES[(this.cursor + col + row + hits.length) % POT_FAMILIES.length];
+        hits.push({ position: { col, row }, familyId });
+      });
+    });
+
+    return hits;
+  }
+
+  private createFeatureEvents(pokeballs: PokeballHit[], potStages: Record<PotFamilyId, number>): FeatureEvent[] {
+    const simulatedStages: Record<PotFamilyId, number> = { ...potStages };
+
+    return pokeballs.map((hit, index) => {
+      const roll = pseudoRoll(this.cursor, hit.position.col, hit.position.row, index);
+      const fromStage = simulatedStages[hit.familyId];
+
+      if (roll < 0.2) {
+        return {
+          type: 'jp',
+          familyId: hit.familyId,
+          fromStage,
+          toStage: fromStage,
+          jpWin: this.paytable.bet * JP_MULTIPLIERS[fromStage],
+          position: hit.position,
+        };
+      }
+
+      if (roll < 0.55 && fromStage < 2) {
+        simulatedStages[hit.familyId] = fromStage + 1;
+        return {
+          type: 'evolve',
+          familyId: hit.familyId,
+          fromStage,
+          toStage: fromStage + 1,
+          jpWin: 0,
+          position: hit.position,
+        };
+      }
+
+      return {
+        type: 'charge',
+        familyId: hit.familyId,
+        fromStage,
+        toStage: fromStage,
+        jpWin: 0,
+        position: hit.position,
+      };
+    });
+  }
 }
 
 function cloneGrid(grid: string[][]): string[][] {
@@ -109,4 +194,9 @@ function cloneGrid(grid: string[][]): string[][] {
 
 function key(col: number, row: number): string {
   return `${col}:${row}`;
+}
+
+function pseudoRoll(cursor: number, col: number, row: number, index: number): number {
+  const value = Math.sin((cursor + 1) * 91.17 + col * 13.53 + row * 41.91 + index * 7.31) * 10000;
+  return value - Math.floor(value);
 }

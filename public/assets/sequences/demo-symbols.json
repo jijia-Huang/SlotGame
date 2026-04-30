@@ -3,85 +3,102 @@
   "frameWidth": 118,
   "frameHeight": 96,
   "animations": {
-    "eye_idle": {
+    "fire_emblem_idle": {
       "fps": 8,
       "loop": true,
       "frames": [
-        { "label": "EYE", "fill": "#854d0e", "accent": "#fef08a" },
-        { "label": "EYE", "fill": "#a16207", "accent": "#fde047" }
+        { "label": "FIRE", "fill": "#b91c1c", "accent": "#fed7aa" },
+        { "label": "FIRE", "fill": "#ea580c", "accent": "#fef08a" }
       ]
     },
-    "eye_win": {
+    "fire_emblem_win": {
       "fps": 12,
       "loop": true,
       "frames": [
-        { "label": "EYE", "fill": "#92400e", "accent": "#ffffff" },
-        { "label": "EYE", "fill": "#f59e0b", "accent": "#fef3c7" },
-        { "label": "EYE", "fill": "#92400e", "accent": "#ffffff" }
+        { "label": "FIRE", "fill": "#991b1b", "accent": "#ffffff" },
+        { "label": "FIRE", "fill": "#f97316", "accent": "#ffedd5" },
+        { "label": "FIRE", "fill": "#991b1b", "accent": "#ffffff" }
       ]
     },
-    "staff_idle": {
+    "water_shell_idle": {
       "fps": 7,
       "loop": true,
       "frames": [
-        { "label": "STF", "fill": "#7c2d12", "accent": "#fed7aa" },
-        { "label": "STF", "fill": "#9a3412", "accent": "#fdba74" }
+        { "label": "WATR", "fill": "#0369a1", "accent": "#bae6fd" },
+        { "label": "WATR", "fill": "#0284c7", "accent": "#7dd3fc" }
       ]
     },
-    "staff_win": {
+    "water_shell_win": {
       "fps": 12,
       "loop": true,
       "frames": [
-        { "label": "STF", "fill": "#c2410c", "accent": "#ffffff" },
-        { "label": "STF", "fill": "#7c2d12", "accent": "#ffedd5" }
+        { "label": "WATR", "fill": "#075985", "accent": "#ffffff" },
+        { "label": "WATR", "fill": "#38bdf8", "accent": "#e0f2fe" }
       ]
     },
-    "blade_idle": {
+    "grass_leaf_idle": {
       "fps": 6,
       "loop": true,
       "frames": [
-        { "label": "BLD", "fill": "#334155", "accent": "#cbd5e1" },
-        { "label": "BLD", "fill": "#475569", "accent": "#e2e8f0" }
+        { "label": "LEAF", "fill": "#15803d", "accent": "#bbf7d0" },
+        { "label": "LEAF", "fill": "#16a34a", "accent": "#86efac" }
       ]
     },
-    "blade_win": {
+    "grass_leaf_win": {
       "fps": 11,
       "loop": true,
       "frames": [
-        { "label": "BLD", "fill": "#1e293b", "accent": "#ffffff" },
-        { "label": "BLD", "fill": "#64748b", "accent": "#f8fafc" }
+        { "label": "LEAF", "fill": "#166534", "accent": "#ffffff" },
+        { "label": "LEAF", "fill": "#22c55e", "accent": "#dcfce7" }
       ]
     },
-    "gem_red_idle": {
+    "berry_idle": {
       "fps": 7,
       "loop": true,
       "frames": [
-        { "label": "RED", "fill": "#991b1b", "accent": "#fecaca" },
-        { "label": "RED", "fill": "#dc2626", "accent": "#fca5a5" }
+        { "label": "BERRY", "fill": "#be123c", "accent": "#fecdd3" },
+        { "label": "BERRY", "fill": "#e11d48", "accent": "#fda4af" }
       ]
     },
-    "gem_red_win": {
+    "berry_win": {
       "fps": 12,
       "loop": true,
       "frames": [
-        { "label": "RED", "fill": "#7f1d1d", "accent": "#ffffff" },
-        { "label": "RED", "fill": "#ef4444", "accent": "#fee2e2" }
+        { "label": "BERRY", "fill": "#9f1239", "accent": "#ffffff" },
+        { "label": "BERRY", "fill": "#fb7185", "accent": "#ffe4e6" }
       ]
     },
-    "gem_green_idle": {
+    "potion_idle": {
       "fps": 8,
       "loop": true,
       "frames": [
-        { "label": "GRN", "fill": "#047857", "accent": "#a7f3d0" },
-        { "label": "GRN", "fill": "#059669", "accent": "#6ee7b7" }
+        { "label": "POTN", "fill": "#6d28d9", "accent": "#ddd6fe" },
+        { "label": "POTN", "fill": "#7c3aed", "accent": "#c4b5fd" }
       ]
     },
-    "gem_green_win": {
+    "potion_win": {
       "fps": 12,
       "loop": true,
       "frames": [
-        { "label": "GRN", "fill": "#065f46", "accent": "#ffffff" },
-        { "label": "GRN", "fill": "#10b981", "accent": "#d1fae5" }
+        { "label": "POTN", "fill": "#5b21b6", "accent": "#ffffff" },
+        { "label": "POTN", "fill": "#a78bfa", "accent": "#ede9fe" }
+      ]
+    },
+    "pokeball_idle": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        { "label": "BALL", "fill": "#f8fafc", "accent": "#ef4444" },
+        { "label": "BALL", "fill": "#f1f5f9", "accent": "#1f2937" }
+      ]
+    },
+    "pokeball_win": {
+      "fps": 14,
+      "loop": true,
+      "frames": [
+        { "label": "BALL", "fill": "#ffffff", "accent": "#ef4444" },
+        { "label": "BALL", "fill": "#ef4444", "accent": "#ffffff" },
+        { "label": "BALL", "fill": "#111827", "accent": "#f8fafc" }
       ]
     }
   }

@@ -1,4 +1,4 @@
-export type SlotState = 'idle' | 'spinning' | 'clearing' | 'dropping' | 'result' | 'payout';
+export type SlotState = 'idle' | 'spinning' | 'clearing' | 'dropping' | 'result' | 'feature' | 'jp' | 'payout';
 
 export interface SpinLine {
   lineId: string;
@@ -10,6 +10,24 @@ export interface SpinLine {
 export interface GridPosition {
   col: number;
   row: number;
+}
+
+export type PotFamilyId = 'fire' | 'water' | 'grass';
+
+export type FeatureEventType = 'charge' | 'evolve' | 'jp';
+
+export interface PokeballHit {
+  position: GridPosition;
+  familyId: PotFamilyId;
+}
+
+export interface FeatureEvent {
+  type: FeatureEventType;
+  familyId: PotFamilyId;
+  fromStage: number;
+  toStage: number;
+  jpWin: number;
+  position: GridPosition;
 }
 
 export interface CascadeWin {
@@ -28,6 +46,11 @@ export interface CascadeStep {
 export interface SpinResult {
   grid: string[][];
   win: number;
+  baseWin: number;
+  featureWin: number;
+  totalWin: number;
+  pokeballs: PokeballHit[];
+  featureEvents: FeatureEvent[];
   lines: SpinLine[];
   cascades?: CascadeStep[];
 }
@@ -35,6 +58,7 @@ export interface SpinResult {
 export interface SymbolConfig {
   id: string;
   label: string;
+  kind: 'pay' | 'special';
   assetId: string;
   idleAnimation: string;
   stopAnimation: string;

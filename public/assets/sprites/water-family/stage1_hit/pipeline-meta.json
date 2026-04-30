@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "hurt",
+  "prompt": "stage1 small blue water turtle hit reaction, 2x2, stars and water splashes only, no orb",
+  "role": "",
+  "input": "public\\assets\\sprites\\water-family\\stage1_hit\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.88,
+  "trim_border": 4,
+  "edge_clean_depth": 3,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 1,
+  "edge_touch_margin": 2,
+  "frame_labels": [
+    "stage1_hit-1",
+    "stage1_hit-2",
+    "stage1_hit-3",
+    "stage1_hit-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        166,
+        203,
+        508,
+        509
+      ],
+      "edge_touch": false,
+      "output_size": [
+        90,
+        80
+      ],
+      "paste_position": [
+        19,
+        41
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 23,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        67,
+        125,
+        483,
+        507
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        100
+      ],
+      "paste_position": [
+        9,
+        21
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 23,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        130,
+        97,
+        557,
+        449
+      ],
+      "edge_touch": false,
+      "output_size": [
+        112,
+        92
+      ],
+      "paste_position": [
+        8,
+        29
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        130,
+        143,
+        472,
+        450
+      ],
+      "edge_touch": false,
+      "output_size": [
+        90,
+        80
+      ],
+      "paste_position": [
+        19,
+        41
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}

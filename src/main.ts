@@ -53,6 +53,8 @@ function updateState(state: SlotState): void {
     clearing: 'Clearing',
     dropping: 'Dropping',
     result: 'Matched',
+    feature: '3POT',
+    jp: 'JP',
     payout: 'Payout',
   };
 
@@ -61,9 +63,9 @@ function updateState(state: SlotState): void {
 }
 
 function applyResult(result: SpinResult): void {
-  balance += result.win;
+  balance += result.totalWin;
   balanceText.textContent = money(balance);
-  winText.textContent = money(result.win);
+  winText.textContent = money(result.totalWin);
 }
 
 function money(value: number): string {

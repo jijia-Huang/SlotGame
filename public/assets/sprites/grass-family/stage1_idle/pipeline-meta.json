@@ -1,0 +1,155 @@
+{
+  "target": "creature",
+  "mode": "stage1_idle",
+  "prompt": "Fan-game placeholder grass creature stage 1, small green seed beast, 2x2 idle sheet, solid #FF00FF raw background.",
+  "role": "",
+  "input": "D:\\Tool\\SlotGame\\public\\assets\\sprites\\grass-family\\stage1_idle\\raw-sheet.png",
+  "threshold": 100,
+  "edge_threshold": 150,
+  "duration": 180,
+  "rows": 2,
+  "cols": 2,
+  "cell_size": 128,
+  "fit_scale": 0.86,
+  "trim_border": 8,
+  "edge_clean_depth": 6,
+  "align": "bottom",
+  "shared_scale": true,
+  "component_mode": "all",
+  "component_padding": 8,
+  "min_component_area": 16,
+  "edge_touch_margin": 0,
+  "frame_labels": [
+    "stage1_idle-1",
+    "stage1_idle-2",
+    "stage1_idle-3",
+    "stage1_idle-4"
+  ],
+  "frames": [
+    {
+      "grid": [
+        0,
+        0
+      ],
+      "source_box": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        110,
+        183,
+        525,
+        511
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        86
+      ],
+      "paste_position": [
+        9,
+        34
+      ]
+    },
+    {
+      "grid": [
+        0,
+        1
+      ],
+      "source_box": [
+        627,
+        0,
+        1254,
+        627
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        104,
+        168,
+        519,
+        511
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        90
+      ],
+      "paste_position": [
+        9,
+        30
+      ]
+    },
+    {
+      "grid": [
+        1,
+        0
+      ],
+      "source_box": [
+        0,
+        627,
+        627,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        109,
+        184,
+        525,
+        508
+      ],
+      "edge_touch": false,
+      "output_size": [
+        110,
+        85
+      ],
+      "paste_position": [
+        9,
+        35
+      ]
+    },
+    {
+      "grid": [
+        1,
+        1
+      ],
+      "source_box": [
+        627,
+        627,
+        1254,
+        1254
+      ],
+      "component_mode": "all",
+      "component_count": 1,
+      "selected_component_area": null,
+      "selected_component_bbox": null,
+      "crop_bbox": [
+        104,
+        145,
+        519,
+        492
+      ],
+      "edge_touch": false,
+      "output_size": [
+        109,
+        91
+      ],
+      "paste_position": [
+        9,
+        29
+      ]
+    }
+  ],
+  "edge_touch_frames": []
+}
