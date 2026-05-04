@@ -1,9 +1,11 @@
-const MAIN_GAME_BGM_SRC = '/assets/audio/main_game_bgm.wav';
+import { assetUrl } from '../core/assetUrl';
+
+const MAIN_GAME_BGM_SRC = assetUrl('/assets/audio/main_game_bgm.wav');
 const MAIN_GAME_BGM_ELEMENT_ID = 'main-game-bgm';
-const BATTLE_INTRO_SRC = '/assets/audio/battle_encounter_intro.wav';
-const BATTLE_BGM_SRC = '/assets/audio/battle_bgm.wav';
-const JP_COUNTUP_SRC = '/assets/audio/jp_countup_victory.wav';
-const CAPTURE_HIT_DAMAGE_SRC = '/assets/audio/capture_hit_damage.wav';
+const BATTLE_INTRO_SRC = assetUrl('/assets/audio/battle_encounter_intro.wav');
+const BATTLE_BGM_SRC = assetUrl('/assets/audio/battle_bgm.wav');
+const JP_COUNTUP_SRC = assetUrl('/assets/audio/jp_countup_victory.wav');
+const CAPTURE_HIT_DAMAGE_SRC = assetUrl('/assets/audio/capture_hit_damage.wav');
 const CREATURE_HIT_VOLUME = 0.24;
 const JP_COUNTUP_MS = {
   MINI: 8000,

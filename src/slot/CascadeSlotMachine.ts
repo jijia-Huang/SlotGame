@@ -1,6 +1,7 @@
 import * as PIXI from 'pixi.js';
 import { SoundManager } from '../audio/SoundManager';
 import type { AssetStore } from '../core/AssetStore';
+import { assetUrl } from '../core/assetUrl';
 import { CascadeSpinAdapter } from './CascadeSpinAdapter';
 import { SymbolView } from './SymbolView';
 import type { BattleAward, BattleAwardTier, CascadeStep, FeatureEvent, PotFamilyId, SlotState, SpinResult } from './types';
@@ -42,37 +43,37 @@ const BATTLE_AWARDS: Record<BattleAwardTier, number> = {
 };
 const BATTLE_AWARD_TIERS = Object.keys(BATTLE_AWARDS) as BattleAwardTier[];
 const BATTLE_ASSETS = {
-  background: '/assets/battle/background.png',
-  platform: '/assets/battle/platform.png',
+  background: assetUrl('/assets/battle/background.png'),
+  platform: assetUrl('/assets/battle/platform.png'),
   pokeballFrames: [
-    '/assets/battle/pokeball/closed.png',
-    '/assets/battle/pokeball/throw-1.png',
-    '/assets/battle/pokeball/open-1.png',
-    '/assets/battle/pokeball/open-2.png',
-    '/assets/battle/pokeball/shake-1.png',
-    '/assets/battle/pokeball/shake-2.png',
-    '/assets/battle/pokeball/shake-3.png',
-    '/assets/battle/pokeball/success.png',
-    '/assets/battle/pokeball/burst-1.png',
-    '/assets/battle/pokeball/star-1.png',
-    '/assets/battle/pokeball/star-2.png',
-    '/assets/battle/pokeball/star-3.png',
-    '/assets/battle/pokeball/smoke-1.png',
-    '/assets/battle/pokeball/smoke-2.png',
-    '/assets/battle/pokeball/smoke-3.png',
-    '/assets/battle/pokeball/smoke-4.png',
+    assetUrl('/assets/battle/pokeball/closed.png'),
+    assetUrl('/assets/battle/pokeball/throw-1.png'),
+    assetUrl('/assets/battle/pokeball/open-1.png'),
+    assetUrl('/assets/battle/pokeball/open-2.png'),
+    assetUrl('/assets/battle/pokeball/shake-1.png'),
+    assetUrl('/assets/battle/pokeball/shake-2.png'),
+    assetUrl('/assets/battle/pokeball/shake-3.png'),
+    assetUrl('/assets/battle/pokeball/success.png'),
+    assetUrl('/assets/battle/pokeball/burst-1.png'),
+    assetUrl('/assets/battle/pokeball/star-1.png'),
+    assetUrl('/assets/battle/pokeball/star-2.png'),
+    assetUrl('/assets/battle/pokeball/star-3.png'),
+    assetUrl('/assets/battle/pokeball/smoke-1.png'),
+    assetUrl('/assets/battle/pokeball/smoke-2.png'),
+    assetUrl('/assets/battle/pokeball/smoke-3.png'),
+    assetUrl('/assets/battle/pokeball/smoke-4.png'),
   ],
   absorbFrames: Array.from(
     { length: 16 },
-    (_, index) => `/assets/battle/effects/absorb-${index + 1}.png`,
+    (_, index) => assetUrl(`/assets/battle/effects/absorb-${index + 1}.png`),
   ),
   burstFrames: Array.from(
     { length: 3 },
-    (_, index) => `/assets/battle/effects/burst-${index + 1}.png`,
+    (_, index) => assetUrl(`/assets/battle/effects/burst-${index + 1}.png`),
   ),
   starFrames: Array.from(
     { length: 4 },
-    (_, index) => `/assets/battle/effects/star-${index + 1}.png`,
+    (_, index) => assetUrl(`/assets/battle/effects/star-${index + 1}.png`),
   ),
 };
 const POKEBALL_FRAME = {
@@ -617,7 +618,7 @@ export class CascadeSlotMachine extends PIXI.Container {
     const count = mode === 'idle' ? IDLE_FRAME_COUNT : HIT_FRAME_COUNT;
 
     return Array.from({ length: count }, (_item, index) =>
-      `/assets/sprites/${root}/${folder}/${prefix}-${index + 1}.png`,
+      assetUrl(`/assets/sprites/${root}/${folder}/${prefix}-${index + 1}.png`),
     );
   }
 
@@ -625,7 +626,7 @@ export class CascadeSlotMachine extends PIXI.Container {
     const root = FAMILY_ASSET_ROOTS[familyId];
     const folder = `stage${fromStage + 1}_evolve_to_stage${toStage + 1}`;
     return Array.from({ length: EVOLUTION_FRAME_COUNT }, (_item, index) =>
-      `/assets/sprites/${root}/${folder}/${folder}-${index + 1}.png`,
+      assetUrl(`/assets/sprites/${root}/${folder}/${folder}-${index + 1}.png`),
     );
   }
 

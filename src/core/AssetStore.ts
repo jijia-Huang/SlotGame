@@ -1,4 +1,5 @@
 import type { AssetsManifest, PaytableConfig, SequenceSheetConfig, SymbolConfig } from '../slot/types';
+import { assetUrl } from './assetUrl';
 
 export class AssetStore {
   readonly sequences = new Map<string, SequenceSheetConfig>();
@@ -33,9 +34,10 @@ export class AssetStore {
   }
 
   private async fetchJson<T>(url: string): Promise<T> {
-    const response = await fetch(url);
+    const resolvedUrl = assetUrl(url);
+    const response = await fetch(resolvedUrl);
     if (!response.ok) {
-      throw new Error(`Failed to load ${url}: ${response.status}`);
+      throw new Error(`Failed to load ${resolvedUrl}: ${response.status}`);
     }
     return response.json() as Promise<T>;
   }
