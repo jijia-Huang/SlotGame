@@ -1,0 +1,107 @@
+{
+  "style": "GBA-inspired pixel art battle assets",
+  "generatedAt": "2026-04-30",
+  "background": {
+    "path": "public/assets/battle/background.png",
+    "width": 1024,
+    "height": 768
+  },
+  "platform": {
+    "path": "public/assets/battle/platform.png",
+    "width": 640,
+    "height": 320,
+    "alpha": true
+  },
+  "pokeball": {
+    "frameSize": {
+      "width": 96,
+      "height": 96
+    },
+    "alpha": true,
+    "frames": {
+      "closed.png": "public/assets/battle/pokeball/closed.png",
+      "throw-1.png": "public/assets/battle/pokeball/throw-1.png",
+      "open-1.png": "public/assets/battle/pokeball/open-1.png",
+      "open-2.png": "public/assets/battle/pokeball/open-2.png",
+      "shake-1.png": "public/assets/battle/pokeball/shake-1.png",
+      "shake-2.png": "public/assets/battle/pokeball/shake-2.png",
+      "shake-3.png": "public/assets/battle/pokeball/shake-3.png",
+      "success.png": "public/assets/battle/pokeball/success.png",
+      "burst-1.png": "public/assets/battle/pokeball/burst-1.png",
+      "star-1.png": "public/assets/battle/pokeball/star-1.png",
+      "star-2.png": "public/assets/battle/pokeball/star-2.png",
+      "star-3.png": "public/assets/battle/pokeball/star-3.png",
+      "smoke-1.png": "public/assets/battle/pokeball/smoke-1.png",
+      "smoke-2.png": "public/assets/battle/pokeball/smoke-2.png",
+      "smoke-3.png": "public/assets/battle/pokeball/smoke-3.png",
+      "smoke-4.png": "public/assets/battle/pokeball/smoke-4.png"
+    },
+    "previews": {
+      "sequence": "public/assets/battle/pokeball/preview.gif",
+      "source": "public/assets/battle/pokeball/source-preview.gif"
+    },
+    "timingMs": {
+      "throwOpenBurst": 90,
+      "shake": 120,
+      "successHold": 400,
+      "smoke": 80
+    }
+  },
+  "effects": {
+    "frameSize": {
+      "width": 96,
+      "height": 96
+    },
+    "alpha": true,
+    "absorbFrames": [
+      "public/assets/battle/effects/absorb-1.png",
+      "public/assets/battle/effects/absorb-2.png",
+      "public/assets/battle/effects/absorb-3.png",
+      "public/assets/battle/effects/absorb-4.png",
+      "public/assets/battle/effects/absorb-5.png",
+      "public/assets/battle/effects/absorb-6.png",
+      "public/assets/battle/effects/absorb-7.png",
+      "public/assets/battle/effects/absorb-8.png",
+      "public/assets/battle/effects/absorb-9.png",
+      "public/assets/battle/effects/absorb-10.png",
+      "public/assets/battle/effects/absorb-11.png",
+      "public/assets/battle/effects/absorb-12.png",
+      "public/assets/battle/effects/absorb-13.png",
+      "public/assets/battle/effects/absorb-14.png",
+      "public/assets/battle/effects/absorb-15.png",
+      "public/assets/battle/effects/absorb-16.png"
+    ],
+    "burstFrames": [
+      "public/assets/battle/effects/burst-1.png",
+      "public/assets/battle/effects/burst-2.png",
+      "public/assets/battle/effects/burst-3.png"
+    ],
+    "starFrames": [
+      "public/assets/battle/effects/star-1.png",
+      "public/assets/battle/effects/star-2.png",
+      "public/assets/battle/effects/star-3.png",
+      "public/assets/battle/effects/star-4.png"
+    ],
+    "previews": {
+      "absorb": "public/assets/battle/effects/absorb-preview.gif",
+      "burstStar": "public/assets/battle/effects/burst-star-preview.gif",
+      "source": "public/assets/battle/effects/absorb-source-preview.gif"
+    },
+    "timingMs": {
+      "absorbLoop": 80,
+      "burstStar": 70
+    }
+  },
+  "sourceBundles": {
+    "background": "public/assets/battle/_source-background/raw-background.png",
+    "platform": "public/assets/battle/_source-platform/raw-platform.png",
+    "pokeball": "public/assets/battle/_source-pokeball/",
+    "effects": "public/assets/battle/_source-effects/"
+  },
+  "previews": {
+    "composite": "public/assets/battle/preview-composite.png",
+    "pokeball": "public/assets/battle/pokeball/preview.gif",
+    "absorb": "public/assets/battle/effects/absorb-preview.gif",
+    "burstStar": "public/assets/battle/effects/burst-star-preview.gif"
+  }
+}

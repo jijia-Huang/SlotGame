@@ -46,6 +46,6 @@ export class GameApp {
   private layoutScene(scene: PIXI.Container): void {
     const width = this.app.renderer.width / this.app.renderer.resolution;
     const height = this.app.renderer.height / this.app.renderer.resolution;
-    scene.position.set(width / 2, height / 2 - 24);
+    scene.position.set(width / 2, height / 2 + 10);
   }
 }

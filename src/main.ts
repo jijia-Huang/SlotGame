@@ -3,7 +3,7 @@ import * as PIXI from 'pixi.js';
 import { AssetStore } from './core/AssetStore';
 import { GameApp } from './core/GameApp';
 import { CascadeSlotMachine } from './slot/CascadeSlotMachine';
-import type { SlotState, SpinResult } from './slot/types';
+import type { BattleAward, SlotState, SpinResult } from './slot/types';
 
 const root = requireElement<HTMLElement>('#game-root');
 const spinButton = requireElement<HTMLButtonElement>('#spin-button');
@@ -29,6 +29,7 @@ async function bootstrap(): Promise<void> {
   const slot = new CascadeSlotMachine(assets, game.app.renderer as PIXI.Renderer, {
     onStateChange: updateState,
     onResult: applyResult,
+    onBattleAward: applyBattleAward,
   });
 
   game.setScene(slot);
@@ -39,8 +40,10 @@ async function bootstrap(): Promise<void> {
       return;
     }
 
-    balance -= bet;
-    balanceText.textContent = money(balance);
+    if (slot.shouldChargeForNextSpin()) {
+      balance -= bet;
+      balanceText.textContent = money(balance);
+    }
     winText.textContent = money(0);
     void slot.spin();
   });
@@ -56,16 +59,26 @@ function updateState(state: SlotState): void {
     feature: '3POT',
     jp: 'JP',
     payout: 'Payout',
+    transition: 'Wild Encounter',
+    battle: 'Battle',
+    capture: 'Capture',
+    battlePayout: 'JP Payout',
   };
 
   statusText.textContent = labels[state];
-  spinButton.disabled = state !== 'idle';
+  spinButton.disabled = state !== 'idle' && state !== 'battle';
 }
 
 function applyResult(result: SpinResult): void {
   balance += result.totalWin;
   balanceText.textContent = money(balance);
   winText.textContent = money(result.totalWin);
+}
+
+function applyBattleAward(award: BattleAward): void {
+  balance += award.amount;
+  balanceText.textContent = money(balance);
+  winText.textContent = `${award.tier} ${money(award.amount)}`;
 }
 
 function money(value: number): string {

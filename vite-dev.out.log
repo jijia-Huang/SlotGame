@@ -1,0 +1,49 @@
+
+> lightweight-slot-framework@0.1.0 dev
+> vite --host 0.0.0.0 --host 0.0.0.0 --port 5174
+
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m651[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5174[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.27.176.1:[1m5174[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.165.78:[1m5174[22m/[39m
+[2m下午3:04:09[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:04:21[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:04:36[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:06:13[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:06:32[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m下午3:07:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:07:31[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:07:40[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:10:05[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:15:36[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:15:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:17:49[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:18:06[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:18:24[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:18:34[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:19:01[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:28:17[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:31:12[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:39:55[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:44:43[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午3:44:51[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午4:44:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午4:44:33[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午5:52:01[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午5:56:32[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午5:56:46[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:15:46[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:15:56[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:18:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:18:23[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:19:45[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:23:04[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:23:13[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:23:21[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m
+[2m下午6:24:28[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:31:45[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:33:54[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m下午6:34:21[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/audio/SoundManager.ts[22m
+[2m下午6:34:42[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/slot/CascadeSlotMachine.ts[22m

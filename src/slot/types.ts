@@ -1,4 +1,24 @@
-export type SlotState = 'idle' | 'spinning' | 'clearing' | 'dropping' | 'result' | 'feature' | 'jp' | 'payout';
+export type SlotState =
+  | 'idle'
+  | 'spinning'
+  | 'clearing'
+  | 'dropping'
+  | 'result'
+  | 'feature'
+  | 'jp'
+  | 'payout'
+  | 'transition'
+  | 'battle'
+  | 'capture'
+  | 'battlePayout';
+
+export type BattleAwardTier = 'MINI' | 'MINOR' | 'MAJOR' | 'GRAND';
+
+export interface BattleAward {
+  tier: BattleAwardTier;
+  multiplier: number;
+  amount: number;
+}
 
 export interface SpinLine {
   lineId: string;

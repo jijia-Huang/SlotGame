@@ -4,7 +4,7 @@ import type { AssetStore } from '../core/AssetStore';
 import type { SymbolConfig } from './types';
 
 export class SymbolView extends PIXI.Container {
-  readonly size = { width: 140, height: 120 };
+  readonly size = { width: 108, height: 88 };
 
   private current?: PIXI.Container;
   private symbol?: SymbolConfig;
